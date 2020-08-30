@@ -33,7 +33,7 @@ function init() {
     });
 };
 
-function newManager() {
+function newManager() {//these functions will be called using the if statement above
     return inquirer.prompt([
         {
             type: "input",
@@ -59,7 +59,7 @@ function newManager() {
         let manager = new Manager(answer.name, answer.id, answer.email, answer.officeNumber)
         employeeArray.push(manager);
 
-        init();
+        init();//this function to be called again to ask if more employees are to be added
     })
 };
 
@@ -122,22 +122,8 @@ function newIntern() {
         init();
     })
 }
-    //answers container name, id, and email
-    //ask for github and if they are done
-    // var newGuy = new Engineer(answer.name,ans,id, ans.email, response.github)
-   
-    // employeeArray.push(newGuy);
-    //100% of the time you need to create the current engineer obj
-    //push that into your employeearray (array of objects)
 
-        //if you are done, you call a fx to generate the cards passing in your array of obj
-        //if not done go back and ask the questions again
-
-
-
-
-
-function generateHTML(fileName, data) {
+function generateHTML(fileName, data) {//functions that generates the html if done adding employees
     fs.writeFile(fileName, data, "utf8", function(err) {
         if (err) {
             throw err;
