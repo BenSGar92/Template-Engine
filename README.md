@@ -7,7 +7,7 @@
 - [Installation](#installation) 
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [Test](#test)
+- [Instructions](#instructions)
 - [Questions](#questions)
 - [License](#license)
 
@@ -21,7 +21,7 @@
     Used to organize employees based on their role and present them as individual cards on an html page with descriptions about each
 ## Contributing
     Ben Gardner
-## Test
+## Instructions
     run node app.js in terminal
 ## Questions
     For any questions about this application please reach out to me via github or email:
